@@ -1,10 +1,12 @@
-import React from 'react';
-import {Outlet} from 'react-router-dom';
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-const DefaultLayout = () => {
-	return <div>
-		<Outlet />
-	</div>;
-};
+function DefaultLayout() {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
+}
 
 export default DefaultLayout;
