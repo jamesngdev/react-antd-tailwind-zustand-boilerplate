@@ -1,9 +1,10 @@
 import React from "react";
+import FullPageLoading from "@/components/FullPageLoading";
 
 function Dashboard() {
   return (
     <div>
-      <h1>Dashboard page</h1>
+      <FullPageLoading />
     </div>
   );
 }
