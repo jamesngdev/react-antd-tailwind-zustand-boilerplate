@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import DefaultLayout from "./layouts/DefaultLayout";
+import { DefaultLayout } from "./layouts";
 import { Login } from "./modules/Auth";
 import { Dashboard } from "./modules/Dashboard";
 
