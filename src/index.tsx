@@ -6,7 +6,7 @@ import { RouterProvider } from "react-router-dom";
 import { validateEnvConfig } from "./configs/env.config";
 import reportWebVitals from "./reportWebVitals";
 import router from "./router";
-import "./assets/css/index.scss";
+import "./assets/css/index.css";
 
 const queryClient = new QueryClient();
 

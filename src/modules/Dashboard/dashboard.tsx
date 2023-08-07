@@ -1,10 +1,9 @@
 import React from "react";
-import FullPageLoading from "@/components/FullPageLoading";
 
 function Dashboard() {
   return (
     <div>
-      <FullPageLoading />
+      <h1 className="text-gray-600">Text gray</h1>
     </div>
   );
 }
