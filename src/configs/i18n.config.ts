@@ -10,7 +10,7 @@ const resources = {
       'Welcome to React': 'Welcome to React and react-i18next',
     },
   },
-  fr: {
+  vi: {
     translation: {
       'Welcome to React': 'Bienvenue à React et react-i18next',
     },
