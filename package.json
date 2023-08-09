@@ -52,7 +52,8 @@
   "lint-staged": {
     "linters": {
       "*.{ts,tsx,js,json,md}": [
-        "prettier --write",
+        "npm run prettier",
+        "npm run lint:fix",
         "git add"
       ]
     },
