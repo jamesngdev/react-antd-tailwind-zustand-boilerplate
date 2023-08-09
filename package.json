@@ -35,7 +35,9 @@
     "eject": "craco eject",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
-    "prettier": "prettier --write"
+    "prettier": "prettier --write",
+    "prepare": "husky install",
+    "postinstall": "husky install"
   },
   "husky": {
     "hooks": {
