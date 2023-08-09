@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ConfigProvider } from 'antd';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RouterProvider } from 'react-router-dom';
@@ -7,6 +8,8 @@ import { validateEnvConfig } from './configs/env.config';
 import reportWebVitals from './reportWebVitals';
 import router from './router';
 import './assets/css/index.css';
+import antdconfigs from './configs/antd.config';
+import './configs/i18n.config';
 
 const queryClient = new QueryClient();
 
@@ -18,7 +21,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
+      <ConfigProvider theme={antdconfigs}>
+        <RouterProvider router={router} />
+      </ConfigProvider>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </React.StrictMode>,

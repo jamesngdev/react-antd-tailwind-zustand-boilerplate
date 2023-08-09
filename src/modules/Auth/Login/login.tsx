@@ -1,23 +1,30 @@
 import React from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';
+import { useTranslation } from 'react-i18next';
 import useLogin from './useLogin';
+import LanguageSwitcher from '@/components/LanguageSwitcher/languageSwitcher';
 
 function Login() {
   const { handleSubmit } = useLogin();
-  // loading
 
   return (
-    <div className="flex flex-row text-center">
+    <div className="mt-40 flex flex-row">
       <Form
         name="login-form"
-        className="max-w-screen-sm"
+        className="max-w-screen-sm rounded bg-gray-200 p-3"
         initialValues={{
           email: '',
           password: '',
         }}
         onFinish={handleSubmit}
-        style={{ maxWidth: 500, margin: '0 auto' }}
+        style={{ width: 400, margin: '0 auto' }}
       >
+        <div className="mb-4 flex w-full items-center justify-center">
+          <img src="/logo.png" alt="Site" height="50px" className="mx-auto" />
+        </div>
+
+        <LanguageSwitcher />
+
         <Form.Item
           name="email"
           rules={[{ required: true, message: 'Please input your email!' }]}
@@ -34,9 +41,6 @@ function Login() {
           ]}
         >
           <Input.Password placeholder="Password" />
-        </Form.Item>
-        <Form.Item name="remember" valuePropName="checked">
-          <Checkbox>Remember me</Checkbox>
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit" style={{ width: '100%' }}>
