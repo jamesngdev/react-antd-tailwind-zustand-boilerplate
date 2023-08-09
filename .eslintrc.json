@@ -23,8 +23,12 @@
     "import/extensions": [0],
     "react/function-component-definition": [0],
     "tailwindcss/no-custom-classname": [0],
-    "no-console": "error",
+    "no-console": ["warn"],
     "@typescript-eslint/no-unused-vars": ["warn"],
-    "react-hooks/exhaustive-deps": [0]
+    "react-hooks/exhaustive-deps": [0],
+    "no-restricted-exports": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "arrow-body-style": ["off"],
+    "react/self-closing-comp": ["off"]
   }
 }
