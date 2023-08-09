@@ -39,17 +39,6 @@
     "prepare": "husky install",
     "postinstall": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "npm run lint:fix",
-      "npm run prettier"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "react-app",

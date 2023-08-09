@@ -8,7 +8,8 @@ const useLogin = () => {
   }, []);
 
   const handleSubmit = useCallback((values: FormData) => {
-    console.log('>> values', values);
+    // console.log('>> values', values);
+    setLoading(!!values);
   }, []);
 
   return {

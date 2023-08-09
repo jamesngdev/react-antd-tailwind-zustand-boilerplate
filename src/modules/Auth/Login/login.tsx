@@ -3,10 +3,8 @@ import { Button, Checkbox, Form, Input } from 'antd';
 import useLogin from './useLogin';
 
 function Login() {
-  const { loading, handleSubmit } = useLogin();
+  const { handleSubmit } = useLogin();
   // loading
-
-  console.log('>> loading', loading);
 
   return (
     <div className="flex flex-row text-center">
