@@ -35,9 +35,7 @@
     "eject": "craco eject",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
-    "prettier": "prettier --write",
-    "prepare": "husky install",
-    "postinstall": "husky install"
+    "prettier": "prettier --write"
   },
   "eslintConfig": {
     "extends": [
@@ -77,7 +75,6 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "prettier": "3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
