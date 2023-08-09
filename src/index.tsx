@@ -1,19 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { RouterProvider } from "react-router-dom";
-import { validateEnvConfig } from "./configs/env.config";
-import reportWebVitals from "./reportWebVitals";
-import router from "./router";
-import "./assets/css/index.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { RouterProvider } from 'react-router-dom';
+import { validateEnvConfig } from './configs/env.config';
+import reportWebVitals from './reportWebVitals';
+import router from './router';
+import './assets/css/index.css';
 
 const queryClient = new QueryClient();
 
 validateEnvConfig();
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement,
+  document.getElementById('root') as HTMLElement,
 );
 root.render(
   <React.StrictMode>

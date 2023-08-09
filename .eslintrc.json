@@ -7,7 +7,8 @@
     "airbnb",
     "airbnb-typescript",
     "airbnb/hooks",
-    "prettier"
+    "prettier",
+    "plugin:tailwindcss/recommended"
   ],
   "plugins": [
     "prettier"
@@ -18,8 +19,11 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    "prettier/prettier": ["warn"],
     "react/react-in-jsx-scope": [0],
     "import/prefer-default-export": [0],
-    "import/extensions": [0]
+    "import/extensions": [0],
+    "react/function-component-definition": [0],
+    "tailwindcss/no-custom-classname": [0]
   }
 }

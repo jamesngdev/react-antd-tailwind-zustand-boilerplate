@@ -1,21 +1,21 @@
-import { createBrowserRouter } from "react-router-dom";
-import { DefaultLayout } from "./layouts";
-import { Login } from "./modules/Auth";
-import { Dashboard } from "./modules/Dashboard";
+import { createBrowserRouter } from 'react-router-dom';
+import { DefaultLayout } from './layouts';
+import { Login } from './modules/Auth';
+import { Dashboard } from './modules/Dashboard';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <DefaultLayout />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Dashboard />,
       },
     ],
   },
   {
-    path: "/login",
+    path: '/login',
     element: <Login />,
   },
 ]);

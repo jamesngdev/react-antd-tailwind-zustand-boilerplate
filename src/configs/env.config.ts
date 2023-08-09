@@ -1,5 +1,5 @@
-import * as Joi from "joi";
-import { EnvConfig } from "../@types/configs.type";
+import * as Joi from 'joi';
+import { EnvConfig } from '../@types/configs.type';
 
 const envConfig: Partial<EnvConfig> = {
   port: process.env.REACT_APP_PORT,
