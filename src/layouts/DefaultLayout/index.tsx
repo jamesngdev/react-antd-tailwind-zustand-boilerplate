@@ -57,7 +57,6 @@ const App: React.FC = () => {
               padding: 24,
               minHeight: 360,
               marginTop: 20,
-              background: colorBgContainer,
             }}
           >
             <Outlet />

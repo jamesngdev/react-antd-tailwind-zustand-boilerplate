@@ -3,6 +3,7 @@ import { DefaultLayout } from './layouts';
 import { Login } from './modules/Auth';
 import { Dashboard } from './modules/Dashboard';
 import { AdminManagerList, UserManagerList } from './modules/User';
+import Setting from './modules/Setting';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: '/user/admin-manager',
         element: <AdminManagerList />,
+      },
+      {
+        path: '/settings',
+        element: <Setting />,
       },
     ],
   },

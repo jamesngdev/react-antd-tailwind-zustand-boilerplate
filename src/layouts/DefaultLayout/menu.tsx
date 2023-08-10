@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   DesktopOutlined,
+  SettingOutlined,
   UsergroupAddOutlined,
   UserOutlined,
 } from '@ant-design/icons';
@@ -64,6 +65,12 @@ export default function LayoutMenu() {
           url: '/user/admin-manager',
         }),
       ],
+    }),
+    getItem({
+      label: 'Settings',
+      key: 'setting',
+      icon: <SettingOutlined />,
+      url: '/settings',
     }),
   ];
 
