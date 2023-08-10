@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { DefaultLayout } from './layouts';
 import { Login } from './modules/Auth';
 import { Dashboard } from './modules/Dashboard';
+import { AdminManagerList, UserManagerList } from './modules/User';
 
 const router = createBrowserRouter([
   {
@@ -9,8 +10,12 @@ const router = createBrowserRouter([
     element: <DefaultLayout />,
     children: [
       {
-        path: '/',
-        element: <Dashboard />,
+        path: '/user/user-manager',
+        element: <UserManagerList />,
+      },
+      {
+        path: '/user/admin-manager',
+        element: <AdminManagerList />,
       },
     ],
   },
